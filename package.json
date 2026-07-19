@@ -1,0 +1,29 @@
+{
+  "name": "shell-app",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Shell (host) de la arquitectura de micro-frontends",
+  "scripts": {
+    "dev": "cross-env NEXT_PRIVATE_LOCAL_WEBPACK=true next dev -p 3000",
+    "build": "cross-env NEXT_PRIVATE_LOCAL_WEBPACK=true next build",
+    "start": "next start -p 3000",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@module-federation/nextjs-mf": "^8.8.71",
+    "next": "^15.5.20",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "webpack": "^5.92.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.10",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "cross-env": "^7.0.3",
+    "typescript": "^5.5.3"
+  },
+  "overrides": {
+    "enhanced-resolve": "5.17.1"
+  }
+}
